@@ -1,0 +1,158 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+body {
+  font-size: 16px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  background-color: #e5eff5;
+}
+
+.container {
+  width: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(128, 128, 128, 0.2);
+          box-shadow: 0px 0px 5px 2px rgba(128, 128, 128, 0.2);
+}
+
+.container .product-offering {
+  background-color: white;
+}
+
+.container .product-offering h1 {
+  color: #2ab2af;
+}
+
+.container .product-offering h2 {
+  color: #c0df34;
+}
+
+.container .product-offering p {
+  color: #98a6bd;
+  line-height: 1.7;
+}
+
+.container .pricing-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .pricing-info .pricing {
+  width: 50%;
+  background-color: #2ab2af;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .pricing-info .pricing .price {
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  display: inline-block;
+}
+
+.container .pricing-info .pricing .per {
+  color: #e5eff5;
+}
+
+.container .pricing-info .pricing .access {
+  color: white;
+}
+
+.container .pricing-info .pricing h2 {
+  color: white;
+}
+
+.container .pricing-info .pricing button {
+  padding: 1rem;
+  background-color: #c0df34;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: auto;
+  display: block;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container .pricing-info .info {
+  width: 50%;
+  background-color: #4bbebc;
+}
+
+.container .pricing-info .info h2 {
+  color: white;
+}
+
+.container .pricing-info .info p {
+  color: #e5eff5;
+  line-height: 1.5;
+}
+
+.product-offering, .pricing, .info {
+  padding: 2rem;
+}
+
+@media (max-width: 450px) {
+  .container {
+    margin-block: 2rem;
+    width: 80%;
+  }
+  .container .pricing-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .pricing-info .pricing, .container .pricing-info .info {
+    width: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
